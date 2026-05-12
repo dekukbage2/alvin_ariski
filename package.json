@@ -1,0 +1,25 @@
+{
+  "name": "tf15-ema-stochastic-bot",
+  "version": "1.0.0",
+  "description": "15-minute EMA50/EMA200 stochastic rejection-reversal-momentum trading strategy backtester.",
+  "type": "module",
+  "bin": {
+    "tf15-ema-stoch": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "backtest:sample": "node src/cli.js data/sample-15m.csv --json",
+    "optimize:sample": "node src/optimize.js data/sample-15m.csv"
+  },
+  "keywords": [
+    "trading",
+    "backtest",
+    "ema",
+    "stochastic",
+    "javascript"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
